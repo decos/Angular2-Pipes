@@ -32,6 +32,23 @@
 		number_expression | number[:digitInfo]
 		{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
 		
+		minIntegerDigits: defecto 1
+		minFractionDigits: defecto 0
+		maxFractionDigits: defecto 3
+		
 		Ex: {{pi | number:'3.5-5'}}
 		
+	PIPE: PERCENT
+		Multiplica por 100 el número y muestra en porcentaje el valor
 		
+		number_expression | percent[:digitInfo]
+		
+		Ex: {{ a | percent:'2.2-2' }}
+		
+	PIPE: CURRENCY - MONEDA
+		Es utilizado cuando quieremos mostrar formatos de moneda
+		
+		number_expression | currency[:currencyCode[:symbolDisplay[:digitInfo]]]
+		currencyCode => https://en.wikipedia.org/wiki/ISO_4217
+		symbolDisplay => [true|false]
+		digitInfo => Ver DecimalPipe
