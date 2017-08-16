@@ -29,7 +29,9 @@
 	PIPE: DECIMAL
 		Mostrar numeros y asegurarnos que tengan un formato o tamaño particular
 		
+		number_expression | number[:digitInfo]
+		{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
 		
-	
+		Ex: {{pi | number:'3.5-5'}}
 		
 		
