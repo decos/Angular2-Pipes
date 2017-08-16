@@ -1,0 +1,35 @@
+3. PIPES - TRANSFORMAN LOS VALORES MOSTRADOS EN PANTALLA
+	
+	INICIO DEL PROYECTO Y LA INTRODUCCIÓN A LOS PIPES
+		
+		- Ingresar por consola:
+			ng new pipes
+			ng serve
+	
+	PIPE: UPPERCASE Y LOWERCASE
+	
+		- Ir a la pagina de Bootstrap
+			https://v4-alpha.getbootstrap.com/
+			
+		- Copiar el CDN en el index.html del proyecto
+		
+		- Agregar la variable "nombre"
+			src\app\app.component.ts
+			
+		- Agregar el codigo HTML
+			src\app\app.component.html
+			
+	PIPE: SLICE
+		
+		Ex:
+			- {{ nombre | slice:3 }} del 3 al final
+			- {{ arreglo | slice:1:5 }} del 1 al 4
+			- <li *ngFor="let item of arreglo | slice:5:20">
+			
+	PIPE: DECIMAL
+		Mostrar numeros y asegurarnos que tengan un formato o tamaño particular
+		
+		
+	
+		
+		
