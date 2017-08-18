@@ -31,4 +31,6 @@ export class AppComponent {
   nombre2 = "dieGO enriQUe abANto ARroyo";
 
   video = "Q_4N9OJPpWc";
+
+  activar:boolean =true;
 }
