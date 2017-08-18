@@ -52,3 +52,12 @@
 		currencyCode => https://en.wikipedia.org/wiki/ISO_4217
 		symbolDisplay => [true|false]
 		digitInfo => Ver DecimalPipe
+		
+	PIPE: JSON
+		Convierte el valor usando JSON.stringify
+		
+		<pre>
+			{{ heroe | json }}
+		</pre>
+		
+	
