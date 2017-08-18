@@ -29,4 +29,6 @@ export class AppComponent {
   fecha = new Date();
 
   nombre2 = "dieGO enriQUe abANto ARroyo";
+
+  video = "Q_4N9OJPpWc";
 }

@@ -96,7 +96,22 @@
 		
 		En la última versión de angular, los ARGS ya no vienen x defecto en un arreglo
 		
+	PIPE PERSONALIZADO: DOMSEGURO
+		Este PIPE lo vamos a utilizar en la apliación de SPOTIFY Itunes y YOUTUBE
+		
+		ERROR Error: unsafe value used in a resource URL context
+			- Angular te previene ante el codigo inseguro
 			
+		SOL:
+			1. Crear un nuevo PIPE usando angular-cli
+				ng g p pipes/domseguro
+				
+				Crea el PIPE y actualiza el fichero "app.module"
+		
+			2. Importar "DomSanitizer" en el nuevo PIPE, agregar un constructor y codear el metodo transform.
+			
+			3. En la vista, colocar en el source lo siguiente:
+				[src]=" video | domseguro:'https://www.youtube.com/embed/' "
 			
 			
 			
