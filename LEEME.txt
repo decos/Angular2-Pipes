@@ -69,4 +69,46 @@
 		
 			valorDePromesa | async
 		
-	
+	PIPE: DATE- FECHA
+		Nos va permitir mostrar nuestra fecha en una forma más comoda para el usuario final.
+		Ex:
+			fecha = new Date();
+			
+			{{ fecha | date }}
+			{{ fecha | date:'medium' }}
+			{{ fecha | date:'MMMM - dd' }}
+			{{ fecha | date:'MMMM - dd' }}
+			
+		Por defecto esta en ingles, para traducirlo debemos hacer lo siguiente en el app.module.ts
+
+		1. Importar
+			import { LOCALE_ID } from '@angular/core'
+		2. Agregar un objeto al arreglo providers
+			{ provide: LOCALE_ID, useValue:"es" }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
