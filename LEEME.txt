@@ -86,6 +86,17 @@
 		2. Agregar un objeto al arreglo providers
 			{ provide: LOCALE_ID, useValue:"es" }
 			
+	PIPES PERSONALIZADOS: CAPITALIZAR PALABRAS
+		- Crear el directorio pipes dentro del directorio app y crear dentro el fichero "capitalizado.pipe.ts"
+		src\app\pipes\capitalizado.pipe.ts
+		
+		- Importar el nuevo pipe creado "CapitalizadoPipe"
+		
+		- Los Pipes se definen en DECLARATIONS
+		
+		En la última versión de angular, los ARGS ya no vienen x defecto en un arreglo
+		
+			
 			
 			
 			
