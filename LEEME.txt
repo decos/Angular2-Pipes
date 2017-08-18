@@ -55,9 +55,18 @@
 		
 	PIPE: JSON
 		Convierte el valor usando JSON.stringify
+		Ex:
+			<pre>
+				{{ heroe | json }}
+			</pre>
 		
-		<pre>
-			{{ heroe | json }}
-		</pre>
+	PIPE: ASYNC
+		Nos va permitir mostrar información que vienen de observables o promesas
+		Ex:
+			valorDePromesa = new Promise( (resolve,  reject) => {
+				setTimeout( () => resolve('Llego la data'),3500 );
+			})
+		
+			valorDePromesa | async
 		
 	
